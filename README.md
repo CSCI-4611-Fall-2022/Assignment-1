@@ -1,6 +1,6 @@
 # Assignment 1: Space Minesweeper
 
-**Due: Monday, September 26, 11:59pm CDT**
+**Due: Tuesday, September 27, 11:59pm CDT**
 
 This assignment involves creating a simple, fun game using 2D graphics. You will learn to:
 
@@ -53,6 +53,38 @@ Webpack should launch your program in a web browser automatically.  If not, you 
 ## Rubric
 
 Graded out of 20 points.
+
+This assignment is divided into six parts.  The provided starter code implements the complete structure of the game and has extensive comments throughout.  The locations to add your code for each of the requirements listed below is marked with `ADD YOUR CODE HERE`.  Note that you do **not** need to make any changes to the existing code, nor do you need to add any code outside of the areas marked in the comments.  However, you should feel free to change the existing code if you want to do something fun or go beyond the requirements of the assignment.
+
+#### Part 1: Star Movement
+
+- The starter code includes a ship that rotate to point towards the mouse cursor.  In class, we made the ship move towards the position of the mouse.  However, this time we want the ship to always be at the center of the screen.  Therefore, instead of moving the ship, you should move the stars in the in the opposite direction, thereby creating the *illusion* of ship movement. (2)
+- To create a cool effect, we can make the velocity of each star dependent on its size, so that smaller stars appear to move slower than bigger stars.  This creates a depth illusion is known as [parallax](https://en.wikipedia.org/wiki/Parallax).  You can achieve this by considering the scale of each star when computing its velocity.  Note that you can use either `.scale.x` or `.scale.y` for this because the star is uniformly scaled. (2)
+
+#### Part 2: Mine Movement
+
+- By default, the mines are programmed to slowly move towards the ship.  In order to complete the illusion of the ship flying through through the scene, you will also need to additionally move each mine in the opposite of the ship's direction, similar to the way you moved the stars. (1)
+- Next, add some slow rotation to each mine so they appear to spin. (2)
+
+#### Part 3: Laser Spawning
+
+- When the user clicks the mouse, a new instance of the laser object should be added to the scene. (2)
+- When the laser is created, it should be rotated to point towards the mouse cursor, similar to the way the ship was pointed in that direction. (1)
+
+#### Part 4: Laser Movement
+
+- In the update method, each laser instance should be translated forward so that it appears to be shooting out from the ship. (2)
+- When a laser moves outside the boundary of the window, it should be removed from the scene.  We don't want an infinite number of lasers that can slow down our game! (2)
+
+#### Part 5: Mine Collisions
+
+- Complete the code in the `checkForMineCollisions()` method to test for mine-to-mine collisions. (2)  
+- When two mines intersect, it should cause them both to explode. (1)
+
+#### Part 6: Laser Collisions
+
+- Complete the code in the `checkForLaserCollisions()` method to test for laser-to-mine collisions (2). 
+- When an intersection occurs, the mine should explode and the laser should be removed from the scene. (1)
 
 ## Wizard Bonus Challenge
 
