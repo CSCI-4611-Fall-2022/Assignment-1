@@ -58,7 +58,7 @@ This assignment is divided into six parts.  The provided starter code implements
 
 #### Part 1: Star Movement
 
-- The starter code includes a ship that rotate to point towards the mouse cursor.  In class, we made the ship move towards the position of the mouse.  However, this time we want the ship to always be at the center of the screen.  Therefore, instead of moving the ship, you should move the stars in the in the opposite direction, thereby creating the *illusion* of ship movement. (2)
+- The starter code includes a ship that rotate to point towards the mouse cursor.  In class, we made the ship move towards the position of the mouse.  However, this time we want the ship to always be at the center of the screen.  Therefore, instead of moving the ship, you should move the stars in the opposite direction, thereby creating the *illusion* of ship movement. (2)
 - To create a cool effect, we can make the velocity of each star dependent on its size, so that smaller stars appear to move slower than bigger stars.  This creates a depth illusion is known as [parallax](https://en.wikipedia.org/wiki/Parallax).  You can achieve this by considering the scale of each star when computing its velocity.  Note that you can use either `.scale.x` or `.scale.y` for this because the star is uniformly scaled. (2)
 
 #### Part 2: Mine Movement
