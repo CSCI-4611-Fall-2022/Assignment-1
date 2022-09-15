@@ -128,7 +128,7 @@ export class SpaceMinesweeper extends gfx.GfxApp
 
 
         // PART 1: STAR MOVEMENT
-        // In class, we made the ship move in the direction of the mouse.
+        // In class, we will make the ship move in the direction of the mouse.
         // Here, you are going to make each star move in the opposite direction.
         // This creates the illusion that the ship is moving forward, even
         // though it remains in the center of the screen.
@@ -164,10 +164,10 @@ export class SpaceMinesweeper extends gfx.GfxApp
 
            
             // This code makes the mines "home" in on the ship position
-            const mineToShip = gfx.Vector2.subtract(mine.position, this.ship.position);
+            const mineToShip = gfx.Vector2.subtract(this.ship.position, mine.position);
             mineToShip.normalize();
             mineToShip.multiplyScalar(mineSpeed)
-            mine.position.subtract(mineToShip);
+            mine.position.add(mineToShip);
 
             // Type cast the mine as a Mine object, and then call its update method.
             // This function checks to see whether the mine is currently exploding,
