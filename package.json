@@ -19,7 +19,7 @@
   "scripts": {
     "dev": "vite",
     "start": "vite",
-    "build": "vite build && javascript-obfuscator ./dist/index.js --output ./dist/index.js --string-array-wrappers-count 0 --string-array-encoding base64 --simplify false",
+    "build": "vite build && javascript-obfuscator ./dist/index.js --output ./dist/index.js --simplify false --string-array false",
     "preview": "vite preview"
   }
 }
