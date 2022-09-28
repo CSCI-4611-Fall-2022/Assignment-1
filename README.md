@@ -17,11 +17,11 @@ You can try a [finished version of the game](https://csci-4611-fall-2022.github.
 
 You should fill out this information before submitting your assignment. Make sure to document the name and source of any third party assets that you added, such as models, images, sounds, or any other content used that was not solely written by you. 
 
-Name:
+Name: Riley Nelson (nel01257)
 
-Third Party Assets:
+Third Party Assets: n/a
 
-Wizard Bonus Functionality:
+Wizard Bonus Functionality: n/a
 
 ## Prerequisites
 
